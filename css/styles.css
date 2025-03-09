@@ -1,0 +1,109 @@
+/* General styles */
+body {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    background-color: #e8f4ea;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px
+}
+
+section {
+    margin-left: 250px;   /* Add left margin */
+    margin-right: 250px;  /* Add right margin */
+    margin-bottom: 5px;  /* Add vertical spacing between sections */
+}
+
+h1 {
+    font-size: 72px;
+    letter-spacing: 9px;
+    color: #000;
+    font-weight: 300;
+    text-align: right;
+    margin-top: 80px;
+    margin-right: 150px;
+}
+
+
+h2 {
+    font-size: 24px;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 400;
+    color: #000;
+}
+
+p {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.2;
+}
+
+/* Accordion button styles */
+.accordion {
+    background-color: #e0f0e3;
+    color: rgb(86, 86, 86);
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px; /* Vertical spacing between accordion buttons */
+}
+
+.accordion:hover {
+    background-color: #7c7c7c;
+    color: #fff;
+}
+
+/* Add arrow indicator for collapsible sections */
+.accordion:after {
+    content: '\25BC';  /* Unicode for down arrow */
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.accordion.active:after {
+    transform: rotate(-180deg);  /* Rotate arrow when active */
+}
+
+/* Panel (hidden content) styles */
+.panel {
+    padding: 0 20px;
+    background-color: #fff;
+    margin: 10px auto;
+    display: none;       /* Initially hidden */
+    overflow: hidden;
+    border-left: 4px solid #b8d8be;
+}
+
+/* Panel visible when active */
+.accordion.active {
+    background-color: #7c7c7c;
+    color: #fff;
+}
+
+a {
+    color: #00a1a1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #00ff99;
+}
