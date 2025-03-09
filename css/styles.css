@@ -107,3 +107,53 @@ a {
 a:hover {
     color: #00ff99;
 }
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    body {
+        line-height: 1.5;
+    }
+
+    header {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 32px;  /* Reduce heading size */
+        letter-spacing: 2px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    h2 {
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    section {
+        margin-left: 10px;  /* Reduce margins */
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: left;
+        margin: 10px auto;
+    }
+
+    .accordion {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .accordion:after {
+        font-size: 14px;
+    }
+
+    .panel {
+        padding: 10px;
+    }
+}
